@@ -42,11 +42,11 @@ document.addEventListener("DOMContentLoaded", () => {
       const projectName = document.createElement("p");
       projectName.textContent = project.name;
 
-      const directorName = document.createElement("p");
-      directorName.textContent = project.director;
+      const architectName = document.createElement("p");
+      architectName.textContent = project.architect;
 
       projectItem.appendChild(projectName);
-      projectItem.appendChild(directorName);
+      projectItem.appendChild(architectName);
 
       projectsContainer.appendChild(projectItem);
     });
@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
               const imgElement = img.querySelector("img");
 
               if (cycle === totalCycles - 1 && img === heroImage) {
-                imgElement.src = "imgs/img5.png";
+                imgElement.src = "imgs/img15.png";
                 gsap.set(".hero-img img", { scale: 2 });
               } else {
                 imgElement.src = randomImages[index];
